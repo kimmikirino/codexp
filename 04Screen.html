@@ -5,22 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/04styleScreen.css">
   <title>App</title>
 </head>
 <body>
     <main>
+      <ul class="progress-bar">
+        <li><i class="fa fa-circle" aria-hidden="true"></i></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <p class="create">create account</p>
       <section class="form-area">
-        <ul class="progress-bar">
-          <li>aaa</li>
-          <li>aa</li>
-          <li>aaa</li>
-        </ul>
         <form action="" method="get" id="form-login">
-            <input class="form-input" type="text" placeholder="username">
-            <input class="form-input" type="password" placeholder="password">
-            <button class="btn" type="submit">Login</button>
-            <p>Not registered? <a href="">Create an account</a></p>
+            <i class="fa fa-align-left" aria-hidden="true"></i>
+            <input class="form-input" type="text" placeholder="Name">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <input class="form-input" type="text" placeholder="Email">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input class="form-input" type="password" placeholder="Password">
+            <button class="btn" type="submit">Continue</button>
+            <p>Terms & Conditions</p>
          </form>
       </section>
     </main>

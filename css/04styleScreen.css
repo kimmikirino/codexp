@@ -11,17 +11,28 @@ body {
 main {
 	position: relative;
 	margin: 0 auto;
-	height: 100vh;
+	height: 89vh;
 }
 
 ul {
 	list-style: none;
+	counter-reset: step;
+	clear: both;
+	padding: 0;
 }
 
 .progress-bar li {
 	font-size: 12px;
-  	width: 24%;
+  	width: 33%;
   	float: left;
+  	position: relative;
+  	text-align: center;
+}
+
+.progress-bar li.active:after,
+.progress-bar li.active:before {
+  background: #27ae60;
+  color: white;
 }
 
 .progress-bar li:before {
@@ -32,67 +43,101 @@ ul {
   	display: block;
   	font-size: 12px;
   	color: transparent;
-  	border: 6px solid #ececec;
-  	background: #27ae60;
+  	border: 1px solid rgba(236, 236, 236, 0.7);
+  	background: transparent;
   	border-radius: 19px;
   	margin: 0 auto 4px;
 }
 
-.progressbar li:after {
-  content: '';
-  width: 85%;
-  height: 3px;
-  background: #B9B9B9;
-  position: absolute;
-  left: -42%;
-  top: 17px;
-  z-index: -1;
+.progress-bar li:after {
+  	content: '';
+    width: 52%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.51);
+    position: absolute;
+    left: -27%;
+    top: 12px;
+    z-index: -1;
+}
+
+.progress-bar li:first-child:after {
+  content: none;
 }
 
 .form-area {
-	width: 50%;
-	transform: translate(-50%, -50%);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	padding: 50px;
-	max-width: 350px;
-	min-width: 150px;
+	width: 94%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    max-width: 500px;
+    min-width: 150px;
 }
 
-a {
-	color: #55c06e;
-	text-decoration: none;
+.fa-circle {
+    position: absolute;
+    top: 27%;
+    left: 47%;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.fa-align-left {
+  top: 33px;
+}
+
+.fa-envelope-o {
+  top: 112px;
+}
+
+.fa-lock {
+  top: 194px;
+}
+
+.fa-align-left, .fa-envelope-o, .fa-lock {
+  position: absolute;
+  left: 20px;
+  color: rgba(255, 255, 255, 0.59);
 }
 
 button {
-	background-color: #00b242;
+	background-color: transparent;
 	width: 100%;
-	border: none;
+	border: 1px solid rgba(255, 255, 255, 0.35);
 	padding: 18px;
-	text-transform: uppercase;
 	color: #fff;
 	margin: 10px 0;
 	font-size: 15px;
+	border-radius: 50px;
+	margin-top: 50px;
 }
 
 input::placeholder {
-	color: #acacac;
+	color: #fff;
 }
 
 p {
-	color: #cacaca;
+  color: rgba(202, 202, 202, 0.81);
 	text-align: center;
 	font-size: 14px;
 }
 
+.create {
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 121px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
 .form-input {
-	margin: 10px 0;
-	padding: 18px;
-	width: 100%;
-	border: none;
-	background-color: #f2f2f2;
-	box-sizing: border-box;
-	font-family: helvetica, sans-serif;
-	font-size: 16px;
+    margin: 10px 0;
+    padding: 22px 25px;
+    padding-left: 50px;
+    width: 100%;
+    border: none;
+    background-color: rgba(214, 206, 206, 0.13);
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 50px;
 }
