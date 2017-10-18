@@ -11,7 +11,7 @@ body {
 main {
 	position: relative;
 	margin: 0 auto;
-	height: 89vh;
+	height: 92vh;
 }
 
 ul {
@@ -19,6 +19,8 @@ ul {
 	counter-reset: step;
 	clear: both;
 	padding: 0;
+  max-width: 360px;
+  margin: 0 auto;
 }
 
 .progress-bar li {
