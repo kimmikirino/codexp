@@ -1,0 +1,125 @@
+body {
+	background-color: #72a270;
+	font-family: 'Roboto', sans-serif;
+	padding: 20px;
+}
+
+main {
+	position: relative;
+	margin: 0 auto;
+	height: 100vh;
+}
+
+h1, .copyright {
+	color: #fff;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	left: 50%;
+}
+
+h1 {
+	top: 10%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+.copyright {
+	bottom: 10%;
+}
+
+ul {
+	list-style-type: none;
+	color: #a9a6af;
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	border-color: #4f6798;
+}
+
+.profile-area {
+	background: #fff;
+	width: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 350px;
+	min-width: 150px;
+}
+
+.profile {
+   padding: 20px;
+   background-color: #1c2c4d;
+}
+
+.profile ul {
+	color: #fff;
+	padding-top: 10px;
+}
+
+.profile li {
+	display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+
+.profile-name {
+    margin-left: 135px;
+    min-height: 89px;
+    color: #fff;
+    margin-top: 12%;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.profile-name b { 
+	font-size: 17px;
+}
+
+.profile-name span {
+	text-transform: uppercase;
+}
+
+.profile-list {
+}
+
+.profile-list li {
+	padding: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+a {
+	color: #55c06e;
+	text-decoration: none;
+}
+
+img {
+    position: absolute;
+    max-width: 31%;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.number {
+	position: absolute;
+    right: 5%;
+    background-color: #1c2c4d;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+p {
+	color: #cacaca;
+	text-align: center;
+	font-size: 14px;
+}
+
+.login-text {
+	color: black;
+	font-size: 16px;
+}
