@@ -98,6 +98,38 @@ header nav {
   right: 13px;
 }
 
-.selected {
+.logo {
+	font-family: 'Satisfy', cursive;
+  font-size: 46px;
+  margin: 20px 0 0 ;
+}
 
+.logo-name {
+	margin-top: 0;
+	position: relative;
+	font-size: 13px;
+}
+
+.logo-name span{
+	position: absolute;
+	top: -6px;
+}
+
+span.first {
+  left: 34%;
+}
+
+span.second {
+  right: 34%;
+}
+
+p {
+	text-align: center;	
+	margin: 5px;
+	color: #fff;
+}
+
+.selected {
+  border-bottom: 2px solid #fde28b;
+  background: rgba(27, 27, 27, 0.47);
 }
