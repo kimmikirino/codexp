@@ -22,11 +22,13 @@ main {
 	margin: 0 auto;
 	height: 100%;
   background: rgba(27, 27, 27, 0.78);
+  height: calc(100% - 51px);
 }
 
 header {
 	background-color: #fff;
   padding: 1em;
+  height: 51px;
 }
 
 ul {
@@ -47,6 +49,7 @@ li {
   border-top: none;
   border-left: none;
   font-size: 14px;
+  max-height: 135px;
 }
 
 li span {
