@@ -10,8 +10,9 @@ body {
 	background: -o-linear-gradient(#fa9676, #110d02); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(#fa9676, #110d02); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(#fa9676, #110d02); /* Standard syntax */
-	height: 100%;
+	height: 94.3%;
 	background-attachment: fixed;
+	margin: 0;
 }
 
 main {
@@ -44,17 +45,17 @@ ul {
 }
 
 .progress-bar li:before {
-	content: counter(step);
-	counter-increment: step;
-	width: 25px;
-	line-height: 25px;
-	display: block;
-	font-size: 12px;
-	color: transparent;
-	border: 1px solid rgba(236, 236, 236, 0.7);
-	background: transparent;
-	border-radius: 19px;
-	margin: 0 auto 4px;
+    content: counter(step);
+    counter-increment: step;
+    width: 0px;
+    line-height: 0px;
+    display: block;
+    font-size: 0px;
+    color: transparent;
+    border: 3px solid rgba(236, 236, 236, 0.7);
+    background: transparent;
+    border-radius: 20px;
+    margin: 10px auto 0px;
 }
 
 .progress-bar li:after {
@@ -148,4 +149,19 @@ p {
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 	border-radius: 50px;
+}
+
+.rounded {
+    border: 1px solid rgba(255, 255, 255, 0.46);
+    width: 18%;
+    margin: 0 auto;
+    height: 41%;
+    border-radius: 50px;
+    position: absolute;
+    top: 4%;
+    left: 40%;
+}
+
+li:first-child {
+    height: 50px;
 }
